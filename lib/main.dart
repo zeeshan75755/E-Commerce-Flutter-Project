@@ -1,5 +1,6 @@
 import 'package:ecomerce_project/controllers/theme_controller.dart';
 import 'package:ecomerce_project/utils/app_themes.dart';
+import 'package:ecomerce_project/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       darkTheme: AppThemes.dark,
       themeMode: themeController.theme,
       defaultTransition: Transition.fade,
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const SplashScreen(),
     );
   }
 }
